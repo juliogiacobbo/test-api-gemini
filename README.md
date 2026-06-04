@@ -61,12 +61,22 @@ O projeto segue o ciclo TDD em toda nova funcionalidade:
 3. **Refactor** — melhorar o código sem quebrar os testes
 
 Os testes ficam na pasta `tests/` e são executados com `pytest`.
-A cada push no GitHub, o GitHub Actions roda os testes automaticamente.
+A cada push no GitHub, o GA roda os testes automaticamente.
+
+**Rodando os testes localmente:**
 
 ```bash
-# rodar os testes localmente
+# rodar todos os testes
 pytest
+
+# rodar com detalhes (ver nome de cada teste)
+pytest -v
+
+# rodar apenas um arquivo de teste
+pytest tests/test_terminal.py -v
 ```
+
+> Os testes usam mocks — não chamam a API real e não precisam do `.env`.
 
 ---
 
