@@ -24,3 +24,6 @@ jobs:
 
       - name: Rodar os testes
         run: pytest tests/ -v
+        env:
+          GEMINI_API_KEY: fake_key_for_testing
+          GEMINI_MODEL_NAME: gemini-2.0-flash
