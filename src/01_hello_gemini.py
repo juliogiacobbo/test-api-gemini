@@ -16,7 +16,7 @@ def perguntar_ao_gemini(prompt):
     except Exception as e:
         return f"Erro ao consultar a API: {e}"
 
-meu_prompt = "Olá Gemini! Pode me dar uma ideia de projeto Python para iniciantes?"
+meu_prompt = "Qual é a capital da França?"
 resultado = perguntar_ao_gemini(meu_prompt)
 
 print("--- Resposta do Gemini ---")
